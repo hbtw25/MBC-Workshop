@@ -1,3 +1,4 @@
+Berikut adalah terjemahan lengkap termasuk bagian referensi untuk tiap ancaman:
 
 # Metasploitable 2
 
@@ -168,4 +169,84 @@ Ganti kata sandi dengan yang lebih kuat dan batasi hak istimewa.
 
 ---
 
-Apakah format ini sudah lengkap dan sesuai kebutuhan?
+### Ancaman No. 11: Telnet – Port 23
+#### Deskripsi
+Telnet adalah protokol yang tidak terenkripsi, sehingga mengirim data sensitif (nama pengguna dan kata sandi) dalam bentuk teks biasa.
+#### Referensi
+https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-115.pdf  
+https://www.pcisecuritystandards.org/document_library
+#### Operasi dan Dampak
+![image](https://user-images.githubusercontent.com/44178372/114247095-95a8a880-9994-11eb-8207-aae5726aad65.png)
+Telnet memungkinkan akses tanpa enkripsi, yang rentan terhadap pengintipan data.
+#### Koreksi
+Nonaktifkan layanan ini kecuali jika diperlukan.
+
+---
+
+### Ancaman No. 12: SSH – Port 22
+#### Deskripsi
+Kata sandi akun pengguna dan msfadmin terlalu lemah.
+#### Referensi
+Tidak ada
+#### Operasi dan Dampak
+![image](https://user-images.githubusercontent.com/44178372/114247150-b670fe00-9994-11eb-858e-3c00db3a3f03.png)
+![image](https://user-images.githubusercontent.com/44178372/114247156-b8d35800-9994-11eb-9b6a-cb402e58f950.png)
+Kata sandi yang lemah memungkinkan akses root yang tidak aman.
+#### Koreksi
+Ubah kata sandi menjadi kata sandi yang kuat.
+
+---
+
+### Ancaman No. 13: PostgreSQL – PostgreSQL DB 8.3.0 - 8.3.7 – Port 5432
+#### Deskripsi
+Kata sandi akun postgres masih menggunakan kata sandi default.
+#### Referensi
+Tidak ada
+#### Operasi dan Dampak
+![image](https://user-images.githubusercontent.com/44178372/114247192-cc7ebe80-9994-11eb-9b06-9744c63d5cce.png)
+Akses mudah menggunakan kata sandi default memungkinkan kendali pada basis data PostgreSQL.
+#### Koreksi
+Ubah kata sandi default ke yang lebih kuat.
+
+---
+
+### Ancaman No. 14: HTTP – Port 80
+#### Deskripsi
+Terdapat halaman phpinfo.php yang menampilkan informasi sensitif versi PHP.
+#### Referensi
+https://www.rapid7.com/db/modules/exploit/multi/http/php_cgi_arg_injection/
+#### Operasi dan Dampak
+![image](https://user-images.githubusercontent.com/44178372/114247297-0ea80000-9995-11eb-9ab2-41d70f78b2cf.png)
+Versi PHP memungkinkan eksekusi exploit melalui Metasploit, memungkinkan akses sebagai pengguna www-data.
+#### Koreksi
+Perbarui versi PHP dan hapus halaman phpinfo.php.
+
+---
+
+### Ancaman No. 15: Versi Kernel
+#### Deskripsi
+Versi Kernel sudah usang dan memiliki beberapa kerentanan.
+#### Referensi
+https://www.cvedetails.com/vulnerability-list/vendor_id-33/product_id-47/version_id-123221/Linux-Linux-Kernel-2.6.24.html
+#### Operasi dan Dampak
+![image](https://user-images.githubusercontent.com/44178372/114247409-529b0500-9995-11eb-8ade-e45ffaff2b79.png)
+Versi Kernel yang teridentifikasi rentan terhadap beberapa exploit yang memungkinkan akses root.
+#### Koreksi
+Perbarui versi Kernel.
+
+---
+
+### Ancaman No. 16: SMTP – Port 25
+#### Deskripsi
+Port SMTP tidak terlindungi dengan baik.
+#### Referensi
+https://www.rapid7.com/db/modules/auxiliary/scanner/smtp/smtp_enum/
+#### Operasi dan Dampak
+![image](https://user-images.githubusercontent.com/44178372/114247483-79593b80-9995-11eb-9c22-345a98f48a81.png)
+Port ini memungkinkan enumerasi pengguna yang dapat disalahgunakan.
+#### Koreksi
+Lindungi port 25 menggunakan firewall atau nonaktifkan jika tidak diperlukan.
+
+---
+
+
