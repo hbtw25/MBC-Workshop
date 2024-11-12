@@ -1,5 +1,3 @@
-Berikut adalah terjemahan lengkap termasuk bagian referensi untuk tiap ancaman:
-
 # Metasploitable 2
 
 ## Konfigurasi
