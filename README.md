@@ -162,7 +162,13 @@ Akun msfadmin memiliki hak istimewa yang berlebihan dan kata sandi yang lemah.
 #### Referensi
 https://www.cnil.fr/fr/generer-un-mot-de-passe-solide
 #### Operasi dan Dampak
-![image](https://user-images.githubusercontent.com/44178372/114246503-11a1f100-9993-11eb-83e6-7466f1a298eb.png)
+![image](https://user-images.githubusercontent.com/44178372/114247026-6eea7200-9994-11eb-9794-56a55b8a6fb0.png)
+
+We list all the admins rights of the account.
+![image](https://user-images.githubusercontent.com/44178372/114247045-7742ad00-9994-11eb-8340-69b734f40973.png)
+
+We become root.
+![image](https://user-images.githubusercontent.com/44178372/114247057-7f025180-9994-11eb-877d-9ec0848d4a89.png)
 Kata sandi ditemukan menggunakan teknik brute force, lalu masuk sebagai root.
 #### Koreksi
 Ganti kata sandi dengan yang lebih kuat dan batasi hak istimewa.
@@ -190,7 +196,10 @@ Kata sandi akun pengguna dan msfadmin terlalu lemah.
 Tidak ada
 #### Operasi dan Dampak
 ![image](https://user-images.githubusercontent.com/44178372/114247150-b670fe00-9994-11eb-858e-3c00db3a3f03.png)
+
 ![image](https://user-images.githubusercontent.com/44178372/114247156-b8d35800-9994-11eb-9b6a-cb402e58f950.png)
+
+![image](https://user-images.githubusercontent.com/44178372/114247159-ba9d1b80-9994-11eb-94ff-262c9f176aa3.png)
 Kata sandi yang lemah memungkinkan akses root yang tidak aman.
 #### Koreksi
 Ubah kata sandi menjadi kata sandi yang kuat.
@@ -204,6 +213,10 @@ Kata sandi akun postgres masih menggunakan kata sandi default.
 Tidak ada
 #### Operasi dan Dampak
 ![image](https://user-images.githubusercontent.com/44178372/114247192-cc7ebe80-9994-11eb-9b06-9744c63d5cce.png)
+
+![image](https://user-images.githubusercontent.com/44178372/114247194-cdafeb80-9994-11eb-9242-1299f9e37ccb.png)
+
+![image](https://user-images.githubusercontent.com/44178372/114247197-cf79af00-9994-11eb-94e4-cbb720eab85b.png)
 Akses mudah menggunakan kata sandi default memungkinkan kendali pada basis data PostgreSQL.
 #### Koreksi
 Ubah kata sandi default ke yang lebih kuat.
@@ -217,7 +230,13 @@ Terdapat halaman phpinfo.php yang menampilkan informasi sensitif versi PHP.
 https://www.rapid7.com/db/modules/exploit/multi/http/php_cgi_arg_injection/
 #### Operasi dan Dampak
 ![image](https://user-images.githubusercontent.com/44178372/114247297-0ea80000-9995-11eb-9ab2-41d70f78b2cf.png)
+
+![image](https://user-images.githubusercontent.com/44178372/114247302-110a5a00-9995-11eb-9da1-6c83a4a5aa55.png)
 Versi PHP memungkinkan eksekusi exploit melalui Metasploit, memungkinkan akses sebagai pengguna www-data.
+
+![image](https://user-images.githubusercontent.com/44178372/114247337-25e6ed80-9995-11eb-9840-3f54714f7e6e.png)
+
+![image](https://user-images.githubusercontent.com/44178372/114247350-2d0dfb80-9995-11eb-9b52-1ccd73d0397c.png)
 #### Koreksi
 Perbarui versi PHP dan hapus halaman phpinfo.php.
 
@@ -230,6 +249,7 @@ Versi Kernel sudah usang dan memiliki beberapa kerentanan.
 https://www.cvedetails.com/vulnerability-list/vendor_id-33/product_id-47/version_id-123221/Linux-Linux-Kernel-2.6.24.html
 #### Operasi dan Dampak
 ![image](https://user-images.githubusercontent.com/44178372/114247409-529b0500-9995-11eb-8ade-e45ffaff2b79.png)
+![image](https://user-images.githubusercontent.com/44178372/114247426-59c21300-9995-11eb-8026-f2dd3b89ff71.png)
 Versi Kernel yang teridentifikasi rentan terhadap beberapa exploit yang memungkinkan akses root.
 #### Koreksi
 Perbarui versi Kernel.
@@ -243,6 +263,8 @@ Port SMTP tidak terlindungi dengan baik.
 https://www.rapid7.com/db/modules/auxiliary/scanner/smtp/smtp_enum/
 #### Operasi dan Dampak
 ![image](https://user-images.githubusercontent.com/44178372/114247483-79593b80-9995-11eb-9c22-345a98f48a81.png)
+
+![image](https://user-images.githubusercontent.com/44178372/114247486-7b22ff00-9995-11eb-9ca4-81c59d069694.png)
 Port ini memungkinkan enumerasi pengguna yang dapat disalahgunakan.
 #### Koreksi
 Lindungi port 25 menggunakan firewall atau nonaktifkan jika tidak diperlukan.
