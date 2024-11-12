@@ -17,9 +17,9 @@ Berikut adalah terjemahan lengkap termasuk bagian referensi untuk tiap ancaman:
 - Gunakan VMWare atau VirtualBox untuk menambahkan VM
 
 ### Langkah 3: Konfigurasi Virtual
-- Tempatkan mesin pada subnet yang sama dengan mesin penyerang
+- Tempatkan mesin pada subnet yang sama dengan mesin penyerang (disarankan menggunakan Host Only Adapter)
 
-IP VM Metasploitable 2 adalah 192.168.10.100/24
+IP VM Metasploitable 2 adalah <IP> yang didapat dari perintah "ip a". jika menggunakan Host Only Adapter maka IP nya akan (192.168.56.102)
 
 ### Langkah 4: Mulai
 - Jalankan kedua VM
