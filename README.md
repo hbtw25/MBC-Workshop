@@ -68,6 +68,10 @@ https://www.rapid7.com/db/modules/auxiliary/scanner/vnc/vnc_login/
 #### Operasi dan Dampak
 ![image](https://user-images.githubusercontent.com/44178372/114246477-fcc55d80-9992-11eb-9a8c-1ba9a3d1c1bb.png)
 Menggunakan backdoor untuk mendapatkan kata sandi, kemudian login dan mendapatkan antarmuka grafis.
+![image](https://user-images.githubusercontent.com/44178372/114246480-fdf68a80-9992-11eb-9a8e-ad5a8fbb49b8.png)
+
+![image](https://user-images.githubusercontent.com/44178372/114246495-08b11f80-9993-11eb-8141-3c774ccfad9d.png)
+
 ![image](https://user-images.githubusercontent.com/44178372/114246503-11a1f100-9993-11eb-83e6-7466f1a298eb.png)
 #### Koreksi
 Ubah kata sandi menjadi yang lebih kuat.
@@ -95,6 +99,10 @@ Tidak ada
 #### Operasi dan Dampak
 ![image](https://user-images.githubusercontent.com/44178372/114246610-53329c00-9993-11eb-87ec-93df83c6b6ab.png)
 Menggunakan NFS untuk menambahkan kunci SSH.
+
+![image](https://user-images.githubusercontent.com/44178372/114246615-56c62300-9993-11eb-8b2d-cd0ee85988cc.png)
+
+![image](https://user-images.githubusercontent.com/44178372/114246627-5e85c780-9993-11eb-9566-4232c7725d89.png)
 #### Koreksi
 Tambahkan autentikasi sebelum mengirimkan file/folder.
 
@@ -138,6 +146,8 @@ https://www.rapid7.com/db/modules/exploit/multi/misc/java_rmi_server/
 #### Operasi dan Dampak
 ![image](https://user-images.githubusercontent.com/44178372/114246477-fcc55d80-9992-11eb-9a8c-1ba9a3d1c1bb.png)
 Menggunakan exploit pada Metasploit untuk mendapatkan akses superuser.
+
+![image](https://user-images.githubusercontent.com/44178372/114246891-1d41e780-9994-11eb-907a-c6873cf40542.png)
 #### Koreksi
 Perbarui versi Java.
 
